@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+/* Registration form container */
+form {
+    width: 420px;
+    padding: 35px 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+h2 {
+    position: absolute;
+    top: 8%;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Text before inputs */
+form {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* All normal inputs */
+input[type="shivam"],
+input[type="e mail"],
+input[type="password"],
+input[type="xyz"],
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+    background: #f8f9ff;
+}
+
+/* Input focus effect */
+input[type="shivam"]:focus,
+input[type="e mail"]:focus,
+input[type="password"]:focus,
+input[type="xyz"]:focus,
+select:focus {
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.25);
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    accent-color: #667eea;
+    margin: 12px 5px 0 10px;
+    cursor: pointer;
+}
+
+/* Select dropdown */
+select {
+    cursor: pointer;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Reset button */
+input[type="reset"] {
+    background: #ff5c5c;
+}
+
+/* Button hover */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+    form {
+        width: 100%;
+        padding: 25px;
+    }
+
+    h2 {
+        top: 4%;
+        font-size: 24px;
+    }
+}
